@@ -1,0 +1,19 @@
+{
+  "name": "zoeetrope-md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node build.js",
+    "start": "nodemon -e hbs,md,css --watch src ./build.js"
+  },
+  "author": "Zoee Silcock",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "markdown": "^0.5.0",
+    "nodemon": "^2.0.15"
+  }
+}
