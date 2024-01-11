@@ -9,7 +9,7 @@
     "start": "nodemon -e hbs,md,css --watch src ./build.js"
   },
   "author": "Zoee Silcock",
-  "license": "ISC",
+  "license": "MIT",
   "type": "module",
   "devDependencies": {
     "handlebars": "^4.7.7",
