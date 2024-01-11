@@ -15,7 +15,7 @@ This rebuilds the page when you make changes to the files.
 npm start
 ```
 
-### Build the project once:
+### Build the project
 ```
 npm run build
 ```
