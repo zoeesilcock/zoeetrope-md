@@ -33,3 +33,9 @@ a:hover {
     color: #444;
   }
 }
+
+#copyright {
+  font-size: 10px;
+  text-align: right;
+}
+

@@ -1,6 +1,6 @@
 # Welcome!
 
-This is my little corner of this wondrous thing that we call the internet. I am Zoee and I have a passion for building and learning new things. The term zoeetrope is based on the term heliotrope which is used to describe plants that follow the sun, similarly this page is meant to follow me. This latest iteration of the page is a pure HTML page with no backend, no JavaScript, no cookies and no tracking of any kind.
+This is my little corner of this wondrous thing that we call the internet. I am Zoee Silcock and I have a passion for building and learning new things. The term zoeetrope is based on the term heliotrope which is used to describe plants that follow the sun, similarly this page is meant to follow me. This latest iteration of the page is a pure HTML page with no backend, no JavaScript, no cookies and no tracking of any kind.
 
 ## Back story
 I was born in Sweden but when I was two years old my parents moved onto a small sailing boat. We took that boat down through the canals of Sweden and beyond, even crossed the north sea over to England to visit my fathers family. We settled for a while in the Netherlands and in the south of France but ultimately made it to Greece where we stayed for about five years before returning to Sweden.
