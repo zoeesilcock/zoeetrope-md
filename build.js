@@ -16,11 +16,14 @@ copyFileSync('src/styles.css', 'dist/styles.css');
 
 function buildHtmlFromMarkdown(fileName) {
   // Load the page contents.
-  const pageContent = readFileSync(`src/${fileName}.md`, 'utf8');
+  const markdownContent = readFileSync(`src/${fileName}.md`, 'utf8');
+  const htmlContent = md.render(markdownContent);
 
   // Load the html template.
-  const template = Handlebars.compile(readFileSync('src/template.hbs', 'utf8'));
+  Handlebars.registerPartial('content', '{{content}}')
+  const pageTemplate = Handlebars.compile(readFileSync('src/template.hbs', 'utf8'), { noEscape: true });
+  const renderedContent = Handlebars.compile('{{{html}}}')({ html: md.render(htmlContent) });
 
   // Generate the html.
-  writeFileSync(`dist/${fileName}.html`, template({ content: md.render(pageContent) }));
+  writeFileSync(`dist/${fileName}.html`, pageTemplate({ content: renderedContent }));
 }
