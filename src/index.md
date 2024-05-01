@@ -14,8 +14,8 @@ To strengthen my understanding of low level concepts I am learning Rust. On the 
 
 ## Links
 * [GitHub](https://github.com/zoeesilcock), here you can see some of my side projects.
-* [Clarus77](http://clarus77.zoeetrope.com), my first ever homepage from the late 90s.
-* [Mobtimer](http://mobtimer.zoeetrope.com), a little tool I built for pair programming.
+* [Clarus77](https://clarus77.zoeetrope.com), my first ever homepage from the late 90s.
+* [Mobtimer](https://mobtimer.zoeetrope.com), a little tool I built for pair programming.
 
 ## Contact
 I don't generally answer cold calls, but you can reach me via [zoee-dot-silcock[at]gmail-dot-com](mailto:zoee.silcock@gmail.com).
