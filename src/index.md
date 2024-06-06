@@ -10,7 +10,7 @@ My career started in postal delivery but I always had an interest in computers a
 
 In 2014 I started a game development company with my best friend in our spare time and we released a mobile game that went by unnoticed. Since then we've been working on a bigger project for consoles and PCs. These days most of my time is split between JavaScript for web development and C# for game development.
 
-To strengthen my understanding of low level concepts I am learning Rust. On the game development side I am learning Godot because I am not happy with being dependent on Unity for developing games. It is hard to predict what will be relevant in the future, but even if these specific technologies don't survive the test of time, learning them is still improving my understanding of the concepts in question.
+To strengthen my understanding of low level concepts I am learning Rust and Zig. On the game development side I am learning Godot because I am not happy with being dependent on Unity for developing games. It is hard to predict what will be relevant in the future, but even if these specific technologies don't survive the test of time, learning them is still improving my understanding of the concepts in question.
 
 ## Links
 * [GitHub](https://github.com/zoeesilcock), here you can see some of my side projects.
