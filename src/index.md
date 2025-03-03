@@ -12,16 +12,17 @@ In 2014 I started a game development company with my best friend in our spare ti
 
 
 ## Learning
-To strengthen my understanding of low level concepts and coding games from scratch I am learning Rust and Zig. On the general game development side I am learning Godot because I am not happy with being dependent on Unity for developing games. It is hard to predict what will be relevant in the future, but even if these specific technologies don't survive the test of time, learning them is still improving my understanding of the concepts in question.
+To strengthen my understanding of low level concepts and coding games from scratch I am learning Zig and Rust. On the general game development side of things I am learning Godot because I am not happy with being dependent on Unity for developing games. It is hard to predict what will be relevant in the future, but even if these specific technologies don't survive the test of time, learning them is still improving my understanding of the concepts in question.
 
-Here are some of the projects that I have created in the process of learning:
+Here are some of the projects that I am working on in the process of learning:
+
+### Zig
+* [Handmade Zig](https://github.com/zoeesilcock/handmade-zig) - Learning Zig by following along with the [Handmade Hero](https://handmadehero.org/) series of videos by Casey Muratori.
+* [Gamedev Playground](https://github.com/zoeesilcock/gamedev-playground) - Playground for exploring ways of making game development a more pleasurable experience.
 
 ### Godot
 * [Symmetar](https://github.com/zoeesilcock/symmetar) - A project I created when I needed something slightly bigger than a hello world type project for learning Godot.
 * [Tetra Type](https://github.com/zoeesilcock/tetra_type) - A little experimental on-screen keyboard I built in Godot.
-
-### Zig
-* [Handmade Zig](https://github.com/zoeesilcock/handmade-zig) - Learning Zig by following along with the [Handmade Hero](https://handmadehero.org/) series of videos by Casey Muratori.
 
 ### Rust
 * [Infinite Monkey](https://github.com/zoeesilcock/infinite-monkey) - A tool for generating random JSON data with a specified structure.
