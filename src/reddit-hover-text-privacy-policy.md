@@ -1,0 +1,2 @@
+# Privacy policy for Reddit Hover Text
+The Reddit Hover Text extension for Chrome doesn't collect or handle any user data of any kind. It is open source so you can check for yourself by visiting the [Github repository](https://github.com/zoeesilcock/reddit-hover-text). If you have any further questions please contact us via email [zoee.silcock+reddit-hover-text@gmail.com](mailto:zoee.silcock+reddit-hover-text@gmail.com).

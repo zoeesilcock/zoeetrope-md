@@ -20,6 +20,7 @@ Handlebars.registerPartial('content', '{{content}}');
 
 // Build our HTML pages.
 buildHtmlFromMarkdown('index');
+buildHtmlFromMarkdown('reddit-hover-text-privacy-policy');
 buildHtmlFromMarkdown('404');
 
 function buildHtmlFromMarkdown(fileName) {
