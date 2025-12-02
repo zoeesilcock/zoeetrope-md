@@ -5,29 +5,27 @@ This is my little corner of this wondrous thing that we call the internet. I am 
 ## Back story
 I was born in Sweden but when I was two years old my parents moved onto a small sailing boat. We took that boat down through the canals of Sweden and beyond, even crossed the north sea over to England to visit my fathers family. We settled for a while in the Netherlands and in the south of France but ultimately made it to Greece where we stayed for about five years before returning to Sweden.
 
+At home we mostly spoke English and at school I learned Greek. So when we got back to Sweden I got to experience learning a new language at 10. Being relatively aware of the process of going from understanding next to nothing of what my peers where saying around me to being fluent might be why I find myself fascinated by languages, both spoken and programming languages.
+
 ## Career
 My career started in postal delivery but I always had an interest in computers and computer programming. The very first things I built where in pure HTML back in the very early days of the internet. I also learned some C and built some small Mac applications. It wasn't until I started learning PHP that I really got into web development. Around 2009 I did a course on Java and object oriented programming which allowed me to change careers and I spent multiple years working with Ruby.
 
-In 2014 I started a game development company with my best friend in our spare time and we released a mobile game that went by unnoticed. Since then we've been working on a bigger project for consoles and PCs. These days most of my time is split between JavaScript for web development and C# for game development.
+In 2014 I started a game development company with my best friend in our spare time and we released a mobile game. Since then we've been working on a bigger project for consoles and PCs which is not announced yet. These days most of my time is split between JavaScript/TypeScript for web development and C# for game development.
 
 
 ## Learning
-To strengthen my understanding of low level concepts and coding games from scratch I am learning Zig and Rust. On the general game development side of things I am learning Godot because I am not happy with being dependent on Unity for developing games. It is hard to predict what will be relevant in the future, but even if these specific technologies don't survive the test of time, learning them is still improving my understanding of the concepts in question.
+To strengthen my low level skills and for coding games from scratch I am learning Zig. So far I am really enjoying the simplicity of the language and the focus on everything being explicit. I've also spent some time learning Godot because I am not happy about being dependent on Unity for developing games, but I'm not sure that Godot is the way I want to go once we finish our current Unity project.
 
-Here are some of the projects that I am working on in the process of learning:
+Here are some of my learning projects:
 
 ### Zig
 * [Handmade Zig](https://github.com/zoeesilcock/handmade-zig) - Learning Zig by following along with the [Handmade Hero](https://handmadehero.org/) series of videos by Casey Muratori.
 * [Gamedev Playground](https://github.com/zoeesilcock/gamedev-playground) - Playground for exploring ways of making game development a more pleasurable experience.
+* [monkey-lang](https://github.com/zoeesilcock/monkey-lang) - The result of reading the book called [Writing An Interpreter In Go](https://interpreterbook.com/) by Thorsten Ball and writing it in Zig instead. The book uses a lot of interfaces which is possible in Zig, but I would probably prefer a more Zig friendly approach.
 
 ### Godot
 * [Symmetar](https://github.com/zoeesilcock/symmetar) - A project I created when I needed something slightly bigger than a hello world type project for learning Godot.
 * [Tetra Type](https://github.com/zoeesilcock/tetra_type) - A little experimental on-screen keyboard I built in Godot.
-
-### Rust
-* [Infinite Monkey](https://github.com/zoeesilcock/infinite-monkey) - A tool for generating random JSON data with a specified structure.
-* [Counting Chars](https://github.com/zoeesilcock/counting-chars) - A tool for analyzing how many times individual characters are repeated in a text.
-* [Walk N' Talk](https://github.com/zoeesilcock/walk-n-talk-rs) - Hello world project I built to learn Bevy and undestand how the ergonomics are.
 
 ## Links
 * [GitHub](https://github.com/zoeesilcock) - Here you can see some of my side projects.
