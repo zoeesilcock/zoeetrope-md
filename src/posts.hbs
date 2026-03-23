@@ -1,0 +1,10 @@
+<{{heading}}>Posts</{{heading}}>
+
+<ul id="posts">
+	{{#each posts}}
+	<li>
+    <h3><a href="{{this.url}}"><span class="date">{{this.date}}</span> - {{this.title}}</a></h3>
+		<p>{{this.intro}}
+	</li>
+	{{/each}}
+</ul>

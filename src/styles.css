@@ -7,8 +7,15 @@ body {
   padding: 20px 20px;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 500;
+}
+
+h1,
+h2 {
+  margin: 30px 0 20px 0;
 }
 
 a {
@@ -17,6 +24,50 @@ a {
 
 a:hover {
   color: #ccc;
+}
+
+nav {
+  > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    > li {
+      padding-right: 15px;
+      display: inline-block;
+    }
+  }
+}
+
+pre {
+  background-color: #252525;
+  padding: 20px;
+}
+
+ul#posts {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  > li {
+    margin-bottom: 20px;
+
+    > h3 {
+      margin: 0 0 10px 0;
+
+      span.date {
+        font-size: 14px;
+      }
+    }
+    > p {
+      margin: 0;
+    }
+  }
+}
+
+#copyright {
+  font-size: 10px;
+  text-align: right;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,9 +83,8 @@ a:hover {
   a:hover {
     color: #444;
   }
-}
 
-#copyright {
-  font-size: 10px;
-  text-align: right;
+  pre {
+    background-color: #eee;
+  }
 }
