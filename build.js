@@ -50,22 +50,25 @@ async function buildIndexPage(fileName) {
     content2: md.render(markdownContent2),
   });
 
-  buildHtmlFromMarkdown(fileName, content);
+  buildHtmlFromMarkdown(fileName, content, fileName);
 }
 
 function buildSimplePage(fileName) {
   const markdown = readFileSync(`src/${fileName}.md`, "utf8");
-  buildHtmlFromMarkdown(fileName, md.render(markdown));
+  buildHtmlFromMarkdown(fileName, md.render(markdown), fileName);
 }
 
-function buildHtmlFromMarkdown(fileName, content) {
-  writeFileSync(`dist/${fileName}.html`, pageTemplate({ styles, content }));
+function buildHtmlFromMarkdown(fileName, content, currentPage) {
+  writeFileSync(
+    `dist/${fileName}.html`,
+    pageTemplate({ styles, content, currentPage }),
+  );
 }
 
 // Posts.
 async function buildPostsPage(fileName) {
   const content = await renderPostList();
-  buildHtmlFromMarkdown(fileName, md.render(content));
+  buildHtmlFromMarkdown(fileName, md.render(content), fileName);
 }
 
 async function buildPostPages(fileName) {
@@ -73,7 +76,7 @@ async function buildPostPages(fileName) {
   for await (const item of dir) {
     const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
     const postName = getPostNameFromFileName(item.name);
-    buildHtmlFromMarkdown(`posts/${postName}`, md.render(markdown));
+    buildHtmlFromMarkdown(`posts/${postName}`, md.render(markdown), "posts");
   }
 }
 
@@ -97,7 +100,7 @@ async function getPosts(limit) {
       title: tokens[0].content,
       date: tokens[1].content,
       intro: tokens[2].content,
-      url: `/posts/${postName}`,
+      url: `/posts/${postName}.html`,
     });
   }
 

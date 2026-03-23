@@ -12,11 +12,11 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.11.1/styles/default.min.css">
 	</head>
 	<body>
-		<nav>
+		<nav data-current-page={{{currentPage}}}>
 			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about.html">About me</a></li>
-				<li><a href="/posts.html">Posts</a></li>
+				<li class="index"><a href="/">Home</a></li>
+				<li class="about"><a href="/about.html">About me</a></li>
+				<li class="posts"><a href="/posts.html">Posts</a></li>
 			</ul>
 		</nav>
 		<main>{{{content}}}</main>

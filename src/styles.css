@@ -33,8 +33,17 @@ nav {
     margin: 0;
 
     > li {
-      padding-right: 15px;
+      padding: 7px;
       display: inline-block;
+    }
+  }
+
+  &[data-current-page="index"] li.index,
+  &[data-current-page="about"] li.about,
+  &[data-current-page="posts"] li.posts {
+    background-color: #333333;
+    @media (prefers-color-scheme: light) {
+      background-color: #eee;
     }
   }
 }
