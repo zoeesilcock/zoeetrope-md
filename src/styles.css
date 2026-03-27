@@ -26,6 +26,10 @@ a:hover {
   color: #ccc;
 }
 
+img {
+  max-width: 100%;
+}
+
 nav {
   > ul {
     list-style: none;

@@ -74,9 +74,16 @@ async function buildPostsPage(fileName) {
 async function buildPostPages(fileName) {
   const dir = await fs.promises.opendir("src/posts");
   for await (const item of dir) {
-    const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
-    const postName = getPostNameFromFileName(item.name);
-    buildHtmlFromMarkdown(`posts/${postName}`, md.render(markdown), "posts");
+    if (/.md$/.test(item.name)) {
+      const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
+      const postName = getPostNameFromFileName(item.name);
+      buildHtmlFromMarkdown(`posts/${postName}`, md.render(markdown), "posts");
+    } else {
+      fs.writeFileSync(
+        `dist/posts/${item.name}`,
+        fs.readFileSync(`${item.parentPath}/${item.name}`),
+      );
+    }
   }
 }
 
@@ -92,7 +99,7 @@ async function getPosts(limit) {
   const dir = await fs.promises.opendir("src/posts");
   for await (const item of dir) {
     const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
-    const tokens = md.parse(markdown).filter((t) => t.type == "inline");
+    const tokens = md.parse(markdown, {}).filter((t) => t.type == "inline");
     const postName = getPostNameFromFileName(item.name);
 
     posts.push({
