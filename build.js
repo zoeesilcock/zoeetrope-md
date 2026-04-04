@@ -98,17 +98,19 @@ async function getPosts(limit) {
 
   const dir = await fs.promises.opendir("src/posts");
   for await (const item of dir) {
-    const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
-    const tokens = md.parse(markdown, {}).filter((t) => t.type == "inline");
-    const postName = getPostNameFromFileName(item.name);
+    if (/.md$/.test(item.name)) {
+      const markdown = readFileSync(`${item.parentPath}/${item.name}`, "utf8");
+      const tokens = md.parse(markdown, {}).filter((t) => t.type == "inline");
+      const postName = getPostNameFromFileName(item.name);
 
-    posts.push({
-      order: item.name,
-      title: tokens[0].content,
-      date: tokens[1].content,
-      intro: tokens[2].content,
-      url: `/posts/${postName}.html`,
-    });
+      posts.push({
+        order: item.name,
+        title: tokens[0].content,
+        date: tokens[1].content,
+        intro: md.render(tokens[2].content),
+        url: `/posts/${postName}.html`,
+      });
+    }
   }
 
   // Sort by file name, descending, and limit.
