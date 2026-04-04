@@ -4,7 +4,7 @@ To strengthen my low level skills and for coding games from scratch I am learnin
 Here are some of my learning projects:
 
 ### Zig
-* [Flint](https://github.com/zoeesilcock/flint) - Tools and ideas for building the game engine your game actually needs.
+* [Flint](https://github.com/zoeesilcock/flint) - Building blocks for the game engine your game actually needs.
 * [Handmade Zig](https://github.com/zoeesilcock/handmade-zig) - Learning Zig by following along with the [Handmade Hero](https://handmadehero.org/) series of videos by Casey Muratori.
 * [monkey-lang](https://github.com/zoeesilcock/monkey-lang) - The result of reading the book called [Writing An Interpreter In Go](https://interpreterbook.com/) by Thorsten Ball and writing it in Zig instead. The book uses a lot of interfaces which is possible in Zig, but I would probably prefer a more Zig friendly approach.
 
